@@ -27,7 +27,21 @@ This project is ideal for **data analysts** looking to develop skills in:
 mkdir ~/.kaggle
 mv kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
-### 3️⃣ Download Walmart Sales Data
-📌 **Data Source**: Use Kaggle API to download the Walmart sales dataset.
-📌 **Dataset Link**: Walmart Sales Dataset
-📌 **Storage**: Save the data in the data/ folder.
+
+### 3️⃣ Download Walmart Sales Data  
+
+📌 **Data Source**: Use Kaggle API to download the **Walmart sales dataset**.  
+
+📌 **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/)  
+
+📌 **Storage**: Save the data in the `data/` folder.  
+
+#### 📥 Download Data Using Kaggle API  
+```bash
+# Ensure Kaggle API is set up
+mkdir -p ~/.kaggle
+mv kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+
+# Download Walmart sales dataset
+kaggle datasets download -d <dataset-path> -p data/ --unzip
